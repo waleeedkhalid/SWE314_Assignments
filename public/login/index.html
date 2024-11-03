@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -38,10 +39,15 @@
             <input type="number" id="otp" name="otp" required>
           <hr>
         </div>
-        
+
+    
+        <div class="input-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAzHNMYUJoqS84RC" data-theme="light"></div>
+        </div>
+            
         <div class="btn-group">
             <button type="submit" class="login-btn">Log In</button>
-            <button type="reset" class="clear-btn" >Clear</button>
+            <!-- <button type="reset" class="clear-btn" >Clear</button> -->
             <a href="/signup"><button type="button" class="signup-btn">Sign Up</button> </a>
             <a href="/users"><button type="button" class="users-btn">Users</button> </a>
         </div>
